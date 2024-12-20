@@ -1,0 +1,49 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+    <title>Login</title>
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+    <style>
+        .box{
+            background-image: url('{% static "images/photo.jpg" %}');
+            background-size: cover;
+            background-repeat: no-repeat    ;
+        }
+    </style>
+{% endblock %}
+{% block body-block %}
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; padding:20px;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#">Google</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-dark" href='{% url "home" %}'>Home</a>
+              <a class="nav-link text-dark" href='{% url "categories" %}'>Categories</a>
+              <a class="nav-link text-dark" href='{% url "about" %}'>About Us</a>
+          </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary me-4" type="submit">Search</button>
+            <button class="btn btn-outline-success" type="reset">SignUp</button>
+          </form>
+        </div>
+      </nav>
+{% endblock %}
+{% block content %}
+    <div class="box">
+        <h1>Google</h1>
+        <div class="abc">
+            <input type="text" placeholder="Email or Mobile Number">
+        </div>
+        <div class="def">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="ghi">
+            <button class="btn btn-outline-dark">Log In</button>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,45 @@
+h2{
+    margin: 165px;
+    padding: 50px;
+    margin-left: 250px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+span{
+    padding:20px;
+    margin: 100px;
+    margin-left:200px;
+}
+#h{
+   margin-left:320px;
+}
+img{
+    width:70%;
+    margin:50px 250px;
+}
+.z{
+    margin:10px 650px 100px;
+    font-size: x-large;
+}
+h1{
+    margin-left: 300px;
+    font-size: xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.b{
+    margin:50px 480px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ba{
+    margin-right: 20px;
+}
+.p{
+    margin: 80px 100px;
+}
+h5{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

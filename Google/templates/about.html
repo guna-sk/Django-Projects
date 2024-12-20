@@ -1,0 +1,46 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<title>About</title>
+<link rel="stylesheet" href='{% static "css/design.css" %}'>
+{% endblock %}
+{% block body-block %}
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; padding:20px;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#">Google</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-dark" href='{% url "home" %}'>Home</a>
+              <a class="nav-link text-dark" href='{% url "categories" %}'>Categories</a>
+              <a class="nav-link text-dark" href='{% url "login" %}'>Log In</a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    {% endblock %}
+    {% block content %}
+    <div class="c">
+      <div class="d-flex"><h2>Our mission is to organize the world’s information and make it <span>universally accessible and useful.</span></h2></div>
+      <img src='{% static "images/bg.png" %}' alt="">
+      <h2 id="h">See our latest product news, AI updates and company <span>announcements</span></h2>
+      <a class="nav-link text-primary z" href="#">Learn more</a>
+      <h1>Make life easier with a little help from our products</h1>
+      <div class="b"><button class="btn btn-primary ba" style="padding:10px 40px;">View all our Products</button><button class="btn btn-outline-primary bb"style="padding:10px 40px;">Get Product support</button></div>
+      <img src='{% static "images/about.jpg" %}' alt="">
+      <a class="nav-link text-primary z" href="#">Learn more</a>
+      <h1>Committed to significantly improving the lives of as <span> many people as possible</span></h1>
+    </div>
+    <div class="d-flex p">
+      <div><h5>Google is an American multinational corporation that focuses on technology, online advertising, and search engine technology. Google's mission is to organize the world's information and make it universally accessible and useful.</h5></div>
+      <div><p>We work hard to ensure that you see helpful, high-quality search results and not web spam, such as sites that don't deliver on the promise of high-quality content or employ tactics that might prove harmful to users. We're continuously improving our spam-fighting technology and working with those beyond Google to support a high-quality, safer web.</p>
+      <p>In Google infrastructure, messages are encrypted at rest and while in transit between data centres. Messages transiting to third-party providers are encrypted with Transport Layer Security when possible, or when required by configuration.</p>
+    </div>
+    </div>
+    {% endblock %}

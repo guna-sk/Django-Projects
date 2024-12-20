@@ -1,0 +1,95 @@
+h2{
+    margin: 30px;
+    padding: 30px;
+}
+.cat{
+    padding: 8px;
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.b{
+    background-color: rgb(185, 185, 185);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 30px;
+    text-decoration: none;
+}
+.d{
+    background-color: rgb(130, 252, 130);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 30px;
+    text-decoration: none;
+}
+.e{
+    background-color: rgb(252, 130, 130);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 30px;
+    text-decoration: none;
+}
+.f{
+    background-color: rgb(250, 252, 130);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 30px;
+    text-decoration: none;
+}
+i{
+    border-radius: 30px;
+    
+    padding: 12px;
+    margin-left: 80px;
+}
+#g{
+    background-color: rgb(131, 131, 131);
+}
+#h{
+    background-color: rgb(87, 241, 56);
+}
+#i{
+    background-color: rgb(241, 56, 56);
+}
+#j{
+    background-color: rgb(241, 222, 56);
+}
+.car{
+    padding: 8px;
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-img-top{
+    padding:20px;
+}
+.card-body{
+    margin-left: 10px;
+}
+.fa-star{
+    margin-left:-10px;
+}
+img{
+    border-radius: 30px;
+}
+.border{
+    padding:60px;
+    margin: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:20px;
+}
+.head{
+    margin-bottom: 20px;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(92, 92, 92);
+}
+h6{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

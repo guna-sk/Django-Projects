@@ -1,0 +1,120 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<title>Categories</title>
+<link rel="stylesheet" href='{% static "css/paint.css" %}'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  .border{
+     background-image: url('{% static "images/banner.png" %}');
+  }
+</style>
+{% endblock %}
+{% block body-block %}
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; padding:20px;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#">Google</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+              <a class="nav-link text-dark" href='{% url "home" %}'>Home</a>
+              <a class="nav-link text-dark" href='{% url "about" %}'>About Us</a>
+              <a class="nav-link text-dark" href='{% url "login" %}'>Log In</a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    {% endblock %}
+    {% block content %}
+    <h2>Top Categories</h2>
+    <div class="cat">
+      <a href="" class="b"><span>Shopping <i class="fa-solid fa-cart-shopping" id="g"></i></span></a>
+      <a href="" class="d"><span>Entertainment <i class="fa-solid fa-film" id="h"></i></span></a>
+      <a href="" class="e"><span>Tools <i class="fa-solid fa-screwdriver-wrench" id="i"></i></span></a>
+      <a href="" class="f"><span>Arts & Design <i class="fa-solid fa-pencil" id="j"></i></span></a>
+    </div>
+    <h2>Hello, you might like</h2>
+    <div class="car d-flex">
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/car.jpg" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>Ulitimate Car Driving Game,</h6>
+          <h6>4.6<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">Enjoy your car stimulator in a big and fascinating city...</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/fruit.jpg" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>Helix fruit jump Acrade Game,</h6>
+          <h6>4.1<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">Helix Fruit jumo acrade you have to take the ball to the finish line...</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/dog.png" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>Happy Dog virtual Game,</h6>
+          <h6>4.5<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">Take care of a virtual pet together with your friends and family...</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/candy.jpg" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>Candy Crash Game,</h6>
+          <h6>4.8<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">This game match the same three color it will disappear and enjoy the disapper with candy...</p>
+        </div>
+      </div>
+    </div>
+    <div class="border">
+      <div class="head">
+          <h1>Editor's Picks for you</h1>
+          <h6>Hand-picked by Chrome editors</h6>
+      </div>
+      <div class="button"><button class="btn btn-outline-dark" style="border-radius:20px;">See Collection</button></div>
+    </div>
+    <h2>Extend your Browser,</h2>
+    <div class="car d-flex">
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/chatgpt.png" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>ChatGPT Sidebar & GPT-4,</h6>
+          <h6>4.8<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">ChatGPT Sidebar & GPT-4 Vision by AITOPIA helps to you use...</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/ai.jpg" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>BrowserGPT: ChatGPT...</h6>
+          <h6>4.5<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">Write, Record,and translate 8x faster. Reply to emails in a click...</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/keep.png" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>Google Keep Chrome..,</h6>
+          <h6>4.0<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">Save to Google Keep with a single click!...</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border-radius:20px; background-color:rgb(240, 238, 238);">
+        <img src='{% static "images/editor.png" %}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>Sidebar:ChatGPT,</h6>
+          <h6>4.2<i class="fa-solid fa-star"></i></h6>
+          <p class="card-text">Ulitimate Sidebar ChatGPT Assistant, Bookmarks with AI,..</p>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
